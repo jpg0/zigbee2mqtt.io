@@ -1,6 +1,6 @@
 ---
 title: "Hive SLT3 control via MQTT"
-description: "Integrate your Hive SLT3 via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendors bridge or gateway."
+description: "Integrate your Hive SLT3 via Zigbee2MQTT with whatever smart home infrastructure you are using without the vendor's bridge or gateway."
 addedAt: 2020-11-01T12:47:02Z
 pageClass: device-page
 ---
@@ -16,10 +16,10 @@ pageClass: device-page
 |     |     |
 |-----|-----|
 | Model | SLT3  |
-| Vendor  | Hive  |
+| Vendor  | [Hive](/supported-devices/#v=Hive)  |
 | Description | Heating thermostat remote control |
-| Exposes | battery, linkquality |
-| Picture | ![Hive SLT3](https://www.zigbee2mqtt.io/images/devices/SLT3.jpg) |
+| Exposes | battery |
+| Picture | ![Hive SLT3](https://www.zigbee2mqtt.io/images/devices/SLT3.png) |
 
 
 <!-- Notes BEGIN: You can edit here. Add "## Notes" headline if not already present. -->
@@ -31,19 +31,14 @@ To pair the thermostat controller to both Zigbee2MQTT and the thermostat, a fact
 <!-- Notes END: Do not edit below this line -->
 
 
+
+
 ## Exposes
 
 ### Battery (numeric)
-Remaining battery in %.
+Remaining battery in %, can take up to 24 hours before reported.
 Value can be found in the published state on the `battery` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 The minimal value is `0` and the maximum value is `100`.
 The unit of this value is `%`.
-
-### Linkquality (numeric)
-Link quality (signal strength).
-Value can be found in the published state on the `linkquality` property.
-It's not possible to read (`/get`) or write (`/set`) this value.
-The minimal value is `0` and the maximum value is `255`.
-The unit of this value is `lqi`.
 
